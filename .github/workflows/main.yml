@@ -1,43 +1,28 @@
-# This is a basic workflow to help you get started with Actions
+name: hugo deploy workflow
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches:
-      - main # 當 main 分支有 push 操作時
+      - main  # 當main分支有push操作時
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "deploy"
   deploy:
-    # The type of runner that the job will run on
     runs-on: macos-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          submodules: true # searching Hugo Themes (true or recursive)
-          fetch-depth: 0 # fetch all history for .GitInfor and .Lastmod
+          submodules: true  # 找尋Hugo主題(true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      # Runs a single command using the runners shell
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.81.0' # hugo 版本
           # extended: true  # 如果是使用extended版本的務必取消註解。
-          
-      # Runs a set of commands using the runners shell
+
       - name: Build
         run: hugo --minify
-        
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -45,4 +30,3 @@ jobs:
           PUBLISH_BRANCH: gh-pages  # 推送到 gh-pages 分支
           PUBLISH_DIR: ./public     # hugo 生成的目錄
           commit_message: ${{ github.event.head_commit.message }}
-          
