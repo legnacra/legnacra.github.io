@@ -2,19 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://legnacra.github.io/</loc>
-    <lastmod>2022-02-21T05:56:05+08:00</lastmod>
+    <loc>https://legnacra.github.io/categories/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
-    <loc>https://legnacra.github.io/2022/02/my-first-post/</loc>
-    <lastmod>2022-02-21T05:56:05+08:00</lastmod>
+    <loc>https://legnacra.github.io/categories/defense/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
+  </url><url>
+    <loc>https://legnacra.github.io/tags/iec62443/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
+  </url><url>
+    <loc>https://legnacra.github.io/2022/04/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
+  </url><url>
+    <loc>https://legnacra.github.io/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
     <loc>https://legnacra.github.io/posts/</loc>
-    <lastmod>2022-02-21T05:56:05+08:00</lastmod>
-  </url><url>
-    <loc>https://legnacra.github.io/archives/</loc>
-  </url><url>
-    <loc>https://legnacra.github.io/categories/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
     <loc>https://legnacra.github.io/tags/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
+  </url><url>
+    <loc>https://legnacra.github.io/archives/</loc>
   </url>
 </urlset>

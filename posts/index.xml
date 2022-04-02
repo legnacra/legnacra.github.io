@@ -6,14 +6,22 @@
     <description>Recent content in Posts on Legnacra&#39;s 學習筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 21 Feb 2022 05:56:05 +0800</lastBuildDate><atom:link href="https://legnacra.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 06:08:05 +0800</lastBuildDate><atom:link href="https://legnacra.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://legnacra.github.io/2022/02/my-first-post/</link>
-      <pubDate>Mon, 21 Feb 2022 05:56:05 +0800</pubDate>
+      <title>ISA/IEC 62443 Part 4: Component | OT 場域資訊安全的六脈神劍</title>
+      <link>https://legnacra.github.io/2022/04/isa-iec-62443-part4-component-the-swords-in-ot-security/</link>
+      <pubDate>Sun, 03 Apr 2022 06:08:05 +0800</pubDate>
       
-      <guid>https://legnacra.github.io/2022/02/my-first-post/</guid>
-      <description></description>
+      <guid>https://legnacra.github.io/2022/04/isa-iec-62443-part4-component-the-swords-in-ot-security/</guid>
+      <description>「六脈神劍，並非真劍，乃是以一陽指的指力化作劍氣，有質無形，可稱無形氣劍。」  因為「指法」達到「四品」的境界，六脈「神劍」才得以堪稱「劍中無匹」，對比 OT 場域資安標準 ISA/IEC 62443-4-1[1] 正是因為有 ISA/IEC 62443-4-2 [2]的「底氣」，才有以戈止戰的立足點．
+ 我們很容易忙碌於黃金圈外層的「做什麼」與「怎麼做」，忘了「為什麼」。 黃金圈理論 - 賽門．西奈克  ISA/IEC 62443 Part 4 Component 被台灣被廣泛討論，甚至在 google trend 上台灣是世界第一的熱點．討論的範疇從入門到進階都有，但總是少了點什麼．ISA/IEC 62443 Part 4 由 Part 4-1 (ISA/IEC 62443-4-1) 和 Part 4-2 (ISA/IEC 62443-4-2) 組成．分別對應黃金圈理論的「怎麼做（策略與流程）」與「做什麼(要求)」．然而，在一開始就必須探索的「為什麼」反而甚少人提及，這往往成為專案內相關利害關係人沒辦法對齊相同的目標與願景的主因，進而導致推動上的阻礙甚或失敗．
+本篇不會討論技術上的實作細節，而是從「為什麼」開始，以攻擊者的觀點描述攻擊的七個步驟，讓導入 ISA/IEC 62443 的防守方得以理解需求「為什麼要做」以及「為什麼不做」．並且將「要做」到事情由上而下以策略與要求兩個層面說明其核心精神．希望能夠解決防禦資源分散的問題，藉此也建立利害關係人的共同畫面，對齊彼此目標，實現願景．
+Cyber Kill Chain Lockheed Martin 洛克希德馬丁以駭客攻擊為樣本，解析駭客攻擊程序為「偵查（Reconnaissance）」、「武裝(Weaponization)」、「運送(Delivery)」、「揭露(Explore)」、「潛伏(Install)」、「命令與控制(Command &amp;amp; Control)」以及「行動(Action on Objectives)」七個步驟[3]．回顧腦海中浮現的戰爭場景，是不是都滿足這七個步驟，而且在心中充滿既視感呢．
+https://unsplash.com/photos/5EUh-tq31eA
+ 網路攻擊行動和傳統戰場看似不同，但其實存在很多的共通點  目的 戰爭不外乎「爭奪別人」的資產的一方，與保護「自己（或利害關係人）的資產」的一方．資訊戰和現代戰爭最大的差異，或許僅止於現代戰爭的「資產」偏向於抽象的價值，例如可口可樂的配方、敵國的關鍵軍事設施等等．
+手段 既然目的相同，達到目標的過程自然相近．儘管網路攻擊因為「決戰於千里之外」到特性，不容易觀察具體的「物理行動」．但假想敵終究是人，過去數千年來從傳統戰爭所累積的經驗，即便各有巧妙不同，一樣適用於資訊戰攻防的借鏡．
+網路攻擊七步驟 就讓我們站在具備專業能力且擁有一定資源與動機駭客的角度，觀察受過良好訓練的駭客會怎麼攻擊，我們又該如何進行防禦．以下的思想演練也邀請讀者們套用於於手邊的產品/服務開發系統文件，透過「把手弄髒」的過程，讓資安落地．
+偵查 (Reconnaissance) 在對目標進行攻擊前，最重要的是搜集目標情報找到突破口．常見的手法可能是社交攻擊以及主/被動弱點評估(vulnerability active/passive assessemnt)．「攻其無備、出其不意」是偵查階段的攻擊方針，因此選用主動或被動取決於對方是否具備偵測機制( 例如目標系統是否受到 IPS/IDS 的保護)．在目標設備受到保護的狀況下，使用主動弱點評估有可能在發送封包執行服務掃描的過程中被發現攻擊意圖，而造成攻擊的失敗．在此情境下使用被動弱點評估雖然獲得的情資（系統作業系統、系統版本、提供的服務以及服務版本）會受到限制，但不失為權宜的做法．</description>
     </item>
     
   </channel>
