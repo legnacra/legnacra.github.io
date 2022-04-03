@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://legnacra.github.io/</loc>
+    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
+    <priority>0</priority>
+  </url><url>
     <loc>https://legnacra.github.io/categories/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
@@ -12,9 +16,6 @@
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
     <loc>https://legnacra.github.io/2022/04/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
-    <lastmod>2022-04-03T06:08:05+08:00</lastmod>
-  </url><url>
-    <loc>https://legnacra.github.io/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
   </url><url>
     <loc>https://legnacra.github.io/posts/</loc>
