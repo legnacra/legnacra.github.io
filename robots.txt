@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://legnacra.github.io/sitemap.xml
+Sitemap: https://zaxue.tw/sitemap.xml

@@ -1,64 +1,64 @@
-<?xml-stylesheet type="text/xsl" href="https://legnacra.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://zaxue.tw/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://legnacra.github.io/categories/</loc>
+    <loc>https://zaxue.tw/categories/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/categories/defensesecurity/</loc>
+    <loc>https://zaxue.tw/categories/defensesecurity/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/tags/iec62443/</loc>
+    <loc>https://zaxue.tw/tags/iec62443/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/post/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
+    <loc>https://zaxue.tw/post/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/posts/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
+    <loc>https://zaxue.tw/posts/isa-iec-62443-part4-component-the-swords-in-ot-security/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/</loc>
+    <loc>https://zaxue.tw/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/posts/</loc>
+    <loc>https://zaxue.tw/posts/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/post/</loc>
+    <loc>https://zaxue.tw/post/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://legnacra.github.io/tags/</loc>
+    <loc>https://zaxue.tw/tags/</loc>
     <lastmod>2022-04-03T06:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
